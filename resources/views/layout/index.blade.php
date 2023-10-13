@@ -9,7 +9,7 @@
     <meta name="keywords" content="">
 
     <link rel="shortcut icon" href="">
-    <link rel="image_src" href="" />
+    <link rel = "icon" href = "{{asset('frontend/logo.png')}}" type ="image/x-icon">
     <link rel="canonical" href="" />
 
     <title>Online Library Management System</title>
@@ -26,9 +26,9 @@
 <body>
     <style>
         .module-head{
-            background-color: #9400D3;
+            background-color: #000000;
             color:#fff;
-            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            
             text-transform: uppercase;
             font-style: bold;
         }
@@ -37,16 +37,16 @@
         }
 
         .widget-menu{
-            background: #9400D3 !important;
+            background: #000000 !important;
             color:#fff;
-            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            
             text-transform: uppercase;
             font-style: bold;
         }
         .navbar-inner{
-            background: #9400D3 !important;
+            background: #000000 !important;
             color:#fff;
-            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            
             text-transform: uppercase;
             font-style: bold;
         }

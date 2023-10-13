@@ -1,84 +1,56 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="author" content="">
-    <meta name="description" content="">
-    <meta name="keywords" content="">
+@extends('account.layout')
+@section('index')
+    <div class="page page1">
+      <div class="container d-flex justify-content-center align-items-center vh-100">
+        <div class="col-12 col-md-8 col-lg-4">
+          <div class="card">
+            <div class="card-body">
+              <div class="card-title">
+                <div class="row">
+                  <div class="col-3">
+                    <img src="{{asset('frontend/logo.png')}}" class="img-fluid" />
+                  </div>
+                  <div class="col-9">
+                    <h2>PERPUSTAKAAN SMA NEGERI 1 TUNJUNGAN</h2>
+                  </div>
+                  <form class="form-vertical" action="{{ URL::route('account-sign-in-post') }}" method="POST">
+                  @csrf
+                    <div class="mb-3">
+                      <label for="exampleFormControlInput1" class="form-label">Nomor Anggota</label>
+                      <input type="text" class="form-control" name="username" placeholder="Masukkan Nomor Anggota Anda" value="{{ Request::old('login') }}" />
+                      @if($errors->has('user_login'))
+									{{ $errors->first('login')}}
+								@endif
+                    </div>
+                    <div class="mb-3">
+                      <label for="exampleFormControlInput1" class="form-label">Kata Sandi</label>
+                      <input type="password" class="form-control" name="password" placeholder="Masukkan Kata Sandi Anda" />
+                      @if($errors->has('password'))
+									{{ $errors->first('password')}}
+								@endif	
+                    </div>
+                    <div class="module-foot">
+						<div class="control-group">
+							<div class="controls clearfix">
+                            <div class="row-6 text-center center-content">
+                                <button type="submit" class="btn btn-dark btn-lg btn-block">Login</button>
+                            </div>
+								<label class="checkbox">
+									<input type="checkbox" name="remember" id="remember"> Remember me
+								</label>
+							</div>
+						</div>
+						<a href="{{ URL::route('account-create') }}">New librarian? Sign Up</a>
+					</div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
-    <link rel="shortcut icon" href="">
-    <link rel="image_src" href="" />
-    <link rel="canonical" href="" />
+    
 
-    <title>Online Library Management System</title>
-
-    <link type="text/css" href="{{ asset('static/bootstrap/css/bootstrap.min.css') }}" rel="stylesheet">
-    <link type="text/css" href="{{ asset('static/bootstrap/css/bootstrap-responsive.min.css') }}" rel="stylesheet">
-    <link type="text/css" href="{{ asset('static/css/theme.css') }}" rel="stylesheet">
-    <link type="text/css" href="{{ asset('static/images/icons/css/font-awesome.css') }}" rel="stylesheet">
-    <link type="text/css" href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,600italic,400,600' rel='stylesheet'>
-
-    @include('common.script_top')
-
-</head>
-<body>
-
-    <style>
-        .module-head{
-            background-color: #9400D3;
-            color:#fff;
-            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-            text-transform: uppercase;
-            font-style: bold;
-        }
-        .module-head h3{
-            color:#fff;
-        }
-
-        .widget-menu{
-            background: #9400D3 !important;
-            color:#fff;
-            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-            text-transform: uppercase;
-            font-style: bold;
-        }
-        .navbar-inner{
-            background: #9400D3 !important;
-            color:#fff;
-            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-            text-transform: uppercase;
-            font-style: bold;
-        }
-    </style>
-
-
-    @include('account.navigation_top')
-    @include('account.message')
-    @yield('content')
-    @include('account.navigation_bottom')
-
-<script src="{{ asset('static/scripts/jquery-1.9.1.min.js') }}" type="text/javascript"></script>
-<script src="{{ asset('static/scripts/jquery-ui-1.10.1.custom.min.js') }}" type="text/javascript"></script>
-<script src="{{ asset('static/bootstrap/js/bootstrap.min.js') }}" type="text/javascript"></script>
-<script src="{{ asset('static/scripts/underscore-min.js') }}" type="text/javascript"></script>
-
-<script src="{{ asset('static/custom/js/script.common.js') }}" type="text/javascript"></script>
-
-@include('common.script_bottom')
-
-<script type="text/template" id="alert_box">
-    @include('underscore.alert_box')
-
-
-</script>
-
-<script>
-        $(document).ready(function(){ 
-        $("input").attr("autocomplete", "off");
-    });
-</script>
-
-</body>
-</html>
+    @stop
