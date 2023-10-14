@@ -9,7 +9,7 @@
               <div class="card-title">
                 <div class="row">
                   <div class="col-2">
-                    <img src="{{asset('frontend/logo.png')}}" class="img-fluid img-logo" />
+                    <img src="{{asset('css/images/logo.png')}}" class="img-fluid img-logo" />
                   </div>
                   <div class="col-10">
                     <h2>PERPUSTAKAAN SMA NEGERI 1 TUNJUNGAN</h2>

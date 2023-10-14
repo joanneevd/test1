@@ -8,7 +8,6 @@ All Rights Reserved.
 
 body {
 	font-size: 13px;
-	font-family: 'Open Sans', Arial, sans-serif;
 	background: #fff;
 	color: #777
 }
@@ -99,7 +98,6 @@ select, textarea, input[type="text"], input[type="password"], input[type="dateti
 	-moz-border-radius: 3px;
 	border-radius: 3px;
 	font-size: 13px;
-	font-family: 'Open Sans', Tahoma, Arial, sans-serif
 }
 .input-append input, .input-prepend input, .input-append select, .input-prepend select, .input-append .uneditable-input, .input-prepend .uneditable-input {
 	-webkit-border-radius: 0 3px 3px 0;
@@ -926,11 +924,11 @@ transition: all .2s ease-in-out;
 	background: #d74f2a
 }
 .widget-menu>li+li {
-	border-top: 1px solid #555
+	border-top: 1px solid #555;
 }
 .widget-menu>li>a {
-	background-color: #2d2b32;
-	color: #767676;
+	background-color: #ffffff;
+	color: #000000;
 	-webkit-transition: all .2s ease-in-out;
 -moz-transition: all .2s ease-in-out;
 transition: all .2s ease-in-out;
@@ -948,7 +946,7 @@ transition: all .2s ease-in-out;
 	display: block
 }
 .widget-menu>li>a:hover {
-	background-color: #28262c;
+	background-color: #025E9B;
 	color: #fafafa;
 }
 
@@ -1062,7 +1060,7 @@ border-top-left-radius: 3px;
 	overflow: hidden
 }
 .login .user-accounts li+li {
-	border-top: 1px solid #ddd
+	border-top: 1px solid #ddd;
 }
 .login .user-avatar {
 	background: #fff;
@@ -1073,7 +1071,7 @@ border-top-left-radius: 3px;
 	-webkit-border-radius: 50px;
 	-moz-border-radius: 50px;
 	border-radius: 50px;
-	margin-right: 15px
+	margin-right: 15px;
 }
 .login .user-avatar img {
 	-webkit-border-radius: 45px;
@@ -1081,36 +1079,36 @@ border-top-left-radius: 3px;
 	border-radius: 45px;
 	width: 90px;
 	height: 90px;
-	margin: 5px
+	margin: 5px;
 }
 .login .user-content {
-	margin: 5px 0 0 125px
+	margin: 5px 0 0 125px;
 }
 .login .user-content h3 {
 	font-size: 16px;
 	line-height: 20px;
-	margin: 0 0 15px
+	margin: 0 0 15px;
 }
 .login .user-content h3 small {
 	font-size: 11px;
-	margin-left: 10px
+	margin-left: 10px;
 }
 .login .user-content p {
-	margin-bottom: 15px
+	margin-bottom: 15px;
 }
 .stream-list {
 	border-top: 1px solid #e5e5e5;
-	margin: 20px -15px -15px
+	margin: 20px -15px -15px;
 }
 .stream {
-	padding: 20px 15px
+	padding: 20px 15px;
 }
 .stream+.stream {
 	border-top: 1px solid #e5e5e5;
-	margin-top: 0
+	margin-top: 0;
 }
 .stream.new-update, .stream.load-more {
-	padding: 0
+	padding: 0;
 }
 .stream.new-update a, .stream.load-more a {
 	background: #background: #f7f7f7;;

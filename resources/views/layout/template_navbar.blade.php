@@ -1,14 +1,20 @@
-<div class="navbar navbar-fixed-top" >
+<div class="navbar navbar-fixed-top">
     <div class="navbar-inner">
-        <div class="container">
-            <a class="btn btn-navbar" data-toggle="collapse" data-target=".navbar-inverse-collapse">
-                <i class="icon-reorder shaded"></i></a>
-                <a class="brand" href="{{ URL::route('home') }}" style="color:#fff;">OLMS</a>
+        <div class="container" style="align-items: center; display: flex; justify-content: space-between">
+
+            <a class="brand" href="{{ URL::route('home') }}"
+                style="color:#000000; font-weight:500; margin-right: auto;"><img src="{{ asset('css/images/logo.png') }}"
+                    alt="Bootstrap" width="40" height="auto" />
+                Perpustakaan SMAN 1 Tunjungan</a>
+
             <div class="nav-collapse collapse navbar-inverse-collapse">
                 <ul class="nav pull-right">
-                    <li class="nav-user dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                        <img src="{{ asset('images/passport-size.png') }}" class="nav-avatar" />{{ auth()->user()->username }}
-                        <b class="caret"></b></a>
+                    <li class="nav-user dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" style="margin-top: auto;">
+                            <img src="{{ asset('css/images/v.jpg') }}"
+                                class="nav-avatar" />{{ auth()->user()->username }}
+                            <b class="caret"></b>
+                        </a>
                         <ul class="dropdown-menu">
                             <li><a href="#" target="_blank">Profile</a></li>
                             <li class="divider"></li>
@@ -17,6 +23,10 @@
                     </li>
                 </ul>
             </div>
+
+            <a class="btn btn-navbar ml-auto" style="margin-left: auto;" data-toggle="collapse"
+                data-target=".navbar-inverse-collapse">
+                <i class="icon-reorder shaded"></i></a>
         </div>
     </div>
 </div>

@@ -1,5 +1,5 @@
 <div class="span3" >
-    <div class="sidebar" >
+    <div class="sidebar">
         <ul class="widget widget-menu unstyled">
             <li>
                 <a href="{{ URL::route('home') }}">
