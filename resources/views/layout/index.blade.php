@@ -33,7 +33,7 @@
 <body>
     <style>
         .module-head {
-            background-color: #025E9B;
+            background-color: #025e9bf0;
             color: #ffffff;
 
             text-transform: uppercase;
