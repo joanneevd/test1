@@ -11,8 +11,7 @@
                 <ul class="nav pull-right">
                     <li class="nav-user dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" style="margin-top: auto;">
-                            <img src="{{ asset('css/images/v.jpg') }}"
-                                class="nav-avatar" />{{ auth()->user()->username }}
+                            {{ auth()->user()->username }}
                             <b class="caret"></b>
                         </a>
                         <ul class="dropdown-menu">

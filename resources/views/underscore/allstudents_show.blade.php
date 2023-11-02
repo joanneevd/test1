@@ -1,17 +1,17 @@
 <%
 for(var i=0; i < branches_list.length; i++){
-	if(obj.branch == branches_list[i].id){
-		var student_branch = branches_list[i].branch;
-		break;
-	}
-	
+ if(obj.branch == branches_list[i].id){
+  var student_branch = branches_list[i].branch;
+  break;
+ }
+ 
 }
 
 for(var i=0; i < categories_list.length; i++){
-	if(obj.category == categories_list[i].cat_id){
-		var student_category = categories_list[i].category;
-		break;
-	}
+ if(obj.category == categories_list[i].cat_id){
+  var student_category = categories_list[i].category;
+  break;
+ }
 }
 
 var student_year = obj.year.toString();
@@ -27,12 +27,15 @@ student_year = student_year.trim().substring(2,4);
 %>
 
 <tr data-student-id="<%= obj.student_id %>">
-	<td><%= obj.student_id %></td>
-	<td><%= obj.first_name %></td>
-	<td><%= obj.last_name %></td>
-	<td><%= obj.roll_num %>-<%= obj.year %></td>
-	<td><%= obj.branch %></td>
-	<td><%= obj.category %></td>
-	<td><%= obj.email_id %></td>
-	<td><%= obj.books_issued %></td>
+    <td><%= obj.student_id %></td>
+    <td><%= obj.first_name %></td>
+    <td><%= obj.last_name %></td>
+    <td><%= obj.roll_num %>-<%= obj.year %></td>
+    <td><%= obj.branch %></td>
+    <td><%= obj.category %></td>
+    <td> <button class="btn btn-primary btn-sm">Edit</button>
+        <button class="btn btn-info btn-sm">Detail</button>
+        <button class="btn btn-danger btn-sm">Hapus</button>
+    </td>
+    <td><%= obj.books_issued %></td>
 </tr>
