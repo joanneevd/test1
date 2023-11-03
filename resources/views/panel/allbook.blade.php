@@ -25,6 +25,7 @@
                     <table class="table table-striped table-bordered table-condensed">
                         <thead>
                             <tr>
+                                <th>No</th>
                                 <th>ISBN</th>
                                 <th>Judul Buku</th>
                                 <th>Penerbit</th>
