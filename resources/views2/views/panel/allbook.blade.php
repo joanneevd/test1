@@ -6,17 +6,21 @@
     <div class="content">
         <div class="module">
             <div class="module-head">
-                <h3>Buku</h3>
+                <h3>Kelola Katalog</h3>
             </div>
             <div class="module-body">
                 <div class="controls">
+                    <div class="d-flex align-items-center mb-3">
 
-                    <select class="" id="category_fill">
-                        @foreach ($categories_list as $category)
-                            <option value="{{ $category->id }}">{{ $category->category }}</option>
-                        @endforeach
-                    </select>
+                        <select class="" id="category_fill">
+                            @foreach ($categories_list as $category)
+                                <option value="{{ $category->id }}">{{ $category->category }}</option>
+                            @endforeach
+                        </select>
+                        <a href="{{ URL::route('add-books') }}" style="margin-bottom:10px"class="btn btn-inverse mr-2">Tambah
+                            Buku</a>
 
+                    </div>
 
                     <table class="table table-striped table-bordered table-condensed">
                         <thead>
@@ -30,6 +34,7 @@
                                 <th>Kategori</th>
                                 <th>Available</th>
                                 <th>Total</th>
+                                <th>Aksi</th>
                             </tr>
                         </thead>
                         <tbody id="all-books">

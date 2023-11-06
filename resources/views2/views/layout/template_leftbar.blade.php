@@ -8,7 +8,12 @@
             </li>
             <li>
                 <a href="{{ URL::route('all-books') }}">
-                    <i class="menu-icon icon-th-list"></i>Buku
+                    <i class="menu-icon icon-th-list"></i>Kelola Katalog
+                </a>
+            </li>
+            <li>
+                <a href="{{ URL::route('registered-students') }}">
+                    <i class="menu-icon icon-group"></i>Kelola Anggota
                 </a>
             </li>
             <li>
@@ -16,23 +21,19 @@
                     <i class="menu-icon icon-filter"></i> Konfirmasi Peminjaman
                 </a>
             </li>
-
-            <li>
-                <a href="{{ URL::route('issue-return') }}">
-                    <i class="menu-icon icon-signout"></i>Peminjaman Buku
-                </a>
-            </li>
-            {{-- 
             <li>
                 <a href="{{ URL::route('currently-issued') }}">
                     <i class="menu-icon icon-list-ul"></i>List Peminjam
                 </a>
-            </li> --}}
-            {{-- <li>
-                <a href="{{ URL::route('registered-students') }}">
-                    <i class="menu-icon icon-group"></i>Kelola Anggota
+            </li>
+            <li>
+                <a href="{{ URL::route('issue-return') }}">
+                    <i class="menu-icon icon-signout"></i>Pengembalian Buku
                 </a>
-            </li> --}}
+            </li>
+
+
+
             {{-- <li>
                 <a href="{{ URL::route('add-book-category') }}">
                     <i class="menu-icon icon-folder-open-alt"></i>Add Book Category
